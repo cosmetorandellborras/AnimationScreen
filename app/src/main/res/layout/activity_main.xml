@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/TextViewTopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center|top"
+        android:text="@string/app_logo_top"
+        android:textColor="@color/loco_color"
+        android:textSize="@dimen/logo_size"/>
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2_Left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:srcCompat="@mipmap/piramide_foreground" />
+
+            <ImageView
+                android:id="@+id/imageView2_Right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:srcCompat="@mipmap/elefante_foreground" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical|center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:srcCompat="@mipmap/globo_foreground" />
+
+            <ImageView
+                android:id="@+id/imageView3_Right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:srcCompat="@mipmap/bigben_foreground" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TextViewBottomTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_logo_bottom"
+        android:textColor="@color/loco_color"
+        android:gravity="center"
+        android:textSize="@dimen/logo_size"/>
+
+    <TextView
+        android:id="@+id/TextViewBottomVersion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/app_version_info"
+        android:textColor="@color/version_color"
+        android:textSize="@dimen/version_size"
+        android:background="@color/version_bkgrd"
+        android:lineSpacingExtra="@dimen/version_spacing"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        />
+</LinearLayout>
