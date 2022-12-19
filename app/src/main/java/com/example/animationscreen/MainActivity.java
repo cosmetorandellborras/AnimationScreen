@@ -64,5 +64,6 @@ public class MainActivity extends AppCompatActivity {
             TableRow row = (TableRow) binding.TableLayout01.getChildAt(i);
             row.clearAnimation();
         }
+        binding.TextViewBottomTitle.clearAnimation();
     }
 }
